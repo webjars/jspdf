@@ -78,7 +78,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/jspdf" />
+                                    <fileset dir="${project.build.directory}/SOME_SUBDIR-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
