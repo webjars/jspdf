@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jspdf</artifactId>
-    <version>1.0.150-SNAPSHOT</version>
+    <version>1.0.150</version>
     <name>jspdf</name>
     <description>WebJar for jspdf</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/jspdf</url>
         <connection>scm:git:https://github.com/webjars/jspdf.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jspdf.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jspdf-1.0.150</tag>
     </scm>
 
     <developers>
