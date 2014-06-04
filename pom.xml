@@ -58,7 +58,7 @@
                         <goals><goal>download-single</goal></goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>/v${upstream.version}.zip</fromFile>
+                            <fromFile>v${upstream.version}.zip</fromFile>
                             <toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
                         </configuration>
                     </execution>
