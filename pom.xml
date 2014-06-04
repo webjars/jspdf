@@ -74,6 +74,8 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
+                                <echo message="make tmp dir..." />
+                                <mkdir dir="${destDir}" />
                                 <echo message="unzip archive" />
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
