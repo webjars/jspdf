@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jspdf</artifactId>
-    <version>1.0.272-SNAPSHOT</version>
+    <version>1.0.272</version>
     <name>jspdf</name>
     <description>WebJar for jspdf</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/jspdf</url>
         <connection>scm:git:https://github.com/webjars/jspdf.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jspdf.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jspdf-1.0.272</tag>
     </scm>
 
     <developers>
@@ -74,13 +74,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="make tmp dir..."/>
-                                <mkdir dir="${destDir}"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="make tmp dir..." />
+                                <mkdir dir="${destDir}" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/jsPDF-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/jsPDF-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
